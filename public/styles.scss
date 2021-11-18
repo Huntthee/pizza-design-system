@@ -1,0 +1,111 @@
+// colors
+  $nyanza: #EAF4D3;
+  $spring-bud: #DBD8AE;
+  $brass: #CA907E;
+  $chestnut: #994636;
+  $brown: #895B1E;
+
+@mixin title {
+  font-family: "Noto Serif", Georgia, serif;
+}
+
+@mixin secondary {
+  font-family: "Shippori Antique", Helvetica, sans-serif;
+}
+
+@mixin text {
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 90%;
+}
+
+.site-title, .noto {
+  @include title;
+}
+
+h2, h3 {
+  text-decoration: underline;
+}
+
+h2, h3, .shipp {
+  @include secondary;
+}
+
+p, li, .robo {
+  @include text;
+}
+
+section {
+  border: 1px solid gray;
+  margin: 50px;
+  padding: 20px; 
+}
+
+.color-section {
+  h2 {
+    
+    text-align: center;
+    width: 100%;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.color-box {
+  width: 30%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.fonts-box {
+  margin: 15px;
+  padding: 20px;
+}
+
+.nyanza {
+  background-color: $nyanza;
+}
+
+.spring-bud {
+  background-color: $spring-bud;
+}
+
+.brass {
+  background-color: $brass;
+}
+
+.chestnut {
+  background-color: $chestnut;
+  color: #FFFFFF;
+}
+
+.brown {
+  background-color: $brown;
+  color: #FFFFFF;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
