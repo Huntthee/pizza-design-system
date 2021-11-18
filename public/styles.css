@@ -102,4 +102,31 @@ section {
 .bold {
   font-weight: bold;
 }
+
+.title-item {
+  list-style: none;
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: -30px;
+}
+
+.header-item {
+  list-style: none;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: -30px;
+}
+
+.text-item {
+  list-style: none;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: -30px;
+}
 /*# sourceMappingURL=styles.css.map */
